@@ -26,6 +26,7 @@ class App extends Component {
         <Person name={this.state.persons[0].name} age={this.state.persons[0].age}>Hello There</Person>
         <Person name={this.state.persons[1].name} age={this.state.persons[1].age}>Hello There</Person>
         <Person name={this.state.persons[2].name} age={this.state.persons[2].age}>Hello There</Person>
+        <button onClick={this.switchHandler}>Switch Names</button>
       </div>
     );
   }
