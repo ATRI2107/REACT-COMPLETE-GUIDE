@@ -2,7 +2,13 @@ import React, { useState } from 'react';
 import './App.css';
 import Person from './Person/Person'
 const app=props => {
- 
+    const style={
+      backgroundColor: 'white',
+      font: 'inherit',
+      border: '1px solid blue',
+      padding: '8px',
+      cursor: 'pointer'
+    };
     const [personState, setPersonState]=useState({
       persons:[
         {name: "Max", age: 28},
@@ -39,7 +45,7 @@ const app=props => {
         >
           Hello There</Person>
         <Person name={personState.persons[2].name} age={personState.persons[2].age}>Hello There</Person>
-        <button onClick={()=> switchHandler("Maxmillian")}>Switch Names</button>
+        <button style={style} onClick={()=> switchHandler("Maxmillian")}>Switch Names</button>
       </div>
     );
   
