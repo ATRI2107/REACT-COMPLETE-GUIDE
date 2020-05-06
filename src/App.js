@@ -25,7 +25,7 @@ const app=props => {
       <div className="App">
         <h1> Hi this is a React App</h1>
         <Person name={personState.persons[0].name} age={personState.persons[0].age}>Hello There</Person>
-        <Person name={personState.persons[1].name} age={personState.persons[1].age}>Hello There</Person>
+        <Person name={personState.persons[1].name} age={personState.persons[1].age} click={switchHandler}>Hello There</Person>
         <Person name={personState.persons[2].name} age={personState.persons[2].age}>Hello There</Person>
         <button onClick={switchHandler}>Switch Names</button>
       </div>
