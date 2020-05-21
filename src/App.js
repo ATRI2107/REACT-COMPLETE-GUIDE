@@ -37,7 +37,8 @@ const app=props => {
           {name: newName, age: 28},
           {name: "Manu", age: 29},
           {name: "Stephanie", age: 27}
-        ]
+        ],
+        showPersons: true
       });
     };
     const nameChangeHandler=(event)=>{
@@ -46,7 +47,8 @@ const app=props => {
           {name: "Max", age: 28},
           {name: event.target.value, age: 29},
           {name: "Stephanie", age: 27}
-        ]
+        ],
+        showPersons: true
       });
     }
     console.log(personState) 
