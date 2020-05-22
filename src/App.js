@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import Radium from 'radium';
 import Person from './Person/Person'
 const app=props => {
     const style={
@@ -73,4 +74,4 @@ const app=props => {
   
 }
 
-export default app;
+export default Radium(app);
