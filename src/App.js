@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import Radium from 'radium';
+import Radium, { StyleRoot} from 'radium';
 import Person from './Person/Person'
 const app=props => {
     const style={
@@ -60,6 +60,7 @@ const app=props => {
     }
     console.log(personState) 
     return (
+      <StyleRoot>
       <div className="App">
         {
           personState.showPersons?
@@ -74,6 +75,7 @@ const app=props => {
         
         <button style={style} onClick={toggleHandler}>Switch Names</button>
       </div>
+      </StyleRoot>
     );
   
 }
