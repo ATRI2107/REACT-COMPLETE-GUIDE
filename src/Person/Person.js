@@ -1,5 +1,4 @@
 import React from 'react'
-import Radium from 'radium'
 import './Person.css'
 
  const person=(props)=>{
@@ -9,11 +8,11 @@ import './Person.css'
         }
     }; 
     return(
-        <div style={style} className={"Person "+ props.classlist}>
+        <div className={"Person "+ props.classlist}>
             <p onClick={props.click}> I am {props.name} and I'm {props.age} </p>
             <p>{props.children}</p>
             <input type="text" onChange={props.changed}></input>
         </div>
      ) 
  };
- export default Radium(person);
+ export default person;
