@@ -10,6 +10,8 @@ const app=props => {
       cursor: 'pointer'
     };
 
+    let classes = ['red','bold'].join(' ');
+
     const [personState, setPersonState]=useState({
       persons:[
         {name: "Max", age: 28},
@@ -60,7 +62,7 @@ const app=props => {
               <Person name={personState.persons[0].name} age={personState.persons[0].age} />
               <Person name={personState.persons[1].name} age={personState.persons[1].age} click={()=> switchHandler("Maxi")}
               changed={nameChangeHandler}/>
-              <Person name={personState.persons[2].name} age={personState.persons[2].age} />
+              <Person classlist={classes} name={personState.persons[2].name} age={personState.persons[2].age} />
           </div>
           : null
         }
