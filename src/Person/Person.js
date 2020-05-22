@@ -3,7 +3,7 @@ import './Person.css'
 
  const person=(props)=>{
      return(
-        <div className="Person">
+        <div className={"Person "+ props.classlist}>
             <p onClick={props.click}> I am {props.name} and I'm {props.age} </p>
             <p>{props.children}</p>
             <input type="text" onChange={props.changed}></input>
